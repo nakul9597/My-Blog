@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /My-Blog/about/
 ---
 
 This is my blog where I share all my discoveries, reserches, projects and ideas. It is purely a technical blog and will help anybody with a doubt on the topics discussed here.
