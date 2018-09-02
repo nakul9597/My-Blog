@@ -1,6 +1,5 @@
 ---
 layout: post
-permalink: "/ruby/raspberrypi/gpio"
 title: "Ruby conversion of rpi_gpio"
 ---
 This post is going to be about a ruby gem I found for raspberry pi 3 devices. Most of the raspberry pi 3 users who work on ruby use a gem called [`pi_piper`][pi_piper-github]. For those who have worked on python and used `rpi_gpio` as their main package for controlling I/O pins of the device might find it hard to use `pi_piper`.
