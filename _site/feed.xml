@@ -1,30 +1,267 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/My-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/My-Blog/" rel="alternate" type="text/html" /><updated>2019-08-21T00:29:28+05:30</updated><id>http://localhost:4000/My-Blog/</id><title type="html">My Blog</title><subtitle></subtitle><entry><title type="html">GSoC Acceptance</title><link href="http://localhost:4000/My-Blog/gsoc/acceptance" rel="alternate" type="text/html" title="GSoC Acceptance" /><published>2019-05-07T00:00:00+05:30</published><updated>2019-05-07T00:00:00+05:30</updated><id>http://localhost:4000/My-Blog/gsoc/GSoC-Acceptance</id><content type="html" xml:base="http://localhost:4000/My-Blog/gsoc/acceptance">&lt;p&gt;I have got selected in &lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GSoC&lt;/code&gt;&lt;/a&gt; program to contribute to the Ruby organisation. Gsoc is a summer internship only for students. It is an initiative started and sponsored by Google to get more developers to contribute to open-source. If selected to participate in GSoC, one has to complete an open-source project within a duration of around 4 months. There are many &lt;a href=&quot;https://summerofcode.withgoogle.com/organizations/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;organisations&lt;/code&gt;&lt;/a&gt; that are available to choose from in different categories based on your interest.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/My-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/My-Blog/" rel="alternate" type="text/html" /><updated>2019-08-25T18:48:18+05:30</updated><id>http://localhost:4000/My-Blog/feed.xml</id><title type="html">My Blog</title><subtitle></subtitle><entry><title type="html">GSoC Final Report</title><link href="http://localhost:4000/My-Blog/gsoc/final_report" rel="alternate" type="text/html" title="GSoC Final Report" /><published>2019-08-24T00:00:00+05:30</published><updated>2019-08-24T00:00:00+05:30</updated><id>http://localhost:4000/My-Blog/gsoc/GSoC-Final-Report</id><content type="html" xml:base="http://localhost:4000/My-Blog/gsoc/final_report">&lt;center&gt;&lt;img src=&quot;/My-Blog/gsoc_logo.png&quot; width=&quot;350&quot; align=&quot;left&quot; /&gt;&lt;img src=&quot;/My-Blog/ruby_logo.png&quot; width=&quot;350&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;&lt;strong&gt;Organisation&lt;/strong&gt; : &lt;a href=&quot;https://summerofcode.withgoogle.com/organizations/5542255322988544/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Ruby&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Project&lt;/strong&gt;: &lt;a href=&quot;https://github.com/rubygems/rubygems.org&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rubygems.org&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Project page&lt;/strong&gt;: &lt;a href=&quot;https://summerofcode.withgoogle.com/projects/#4782705487642624&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Recursive tree view for gem dependencies&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mentors&lt;/strong&gt;: &lt;a href=&quot;https://github.com/sonalkr132&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Aditya Prakash&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;https://github.com/ecnelises&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Qiu Chaofan&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Recursive tree view for gem dependencies&lt;/h2&gt;
+
+&lt;h3&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;This project would add a feature on the rubygems.org website to give an option on each gem web page to show a tree/DAG of all transitive dependencies needed by that gem. In one of the &lt;a href=&quot;https://github.com/rubygems/rubygems.org/issues/937&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;issue&lt;/code&gt;&lt;/a&gt; that lead to this project, a user talks about how some users download a gem based of it’s transitive dependencies and how they need to keep a mindmap of these transitive dependencies to conclude whether or not to use the gem. This project will help such users get a better idea of whether that gem is for them or not.&lt;/p&gt;
+
+&lt;h3&gt;Road Map&lt;/h3&gt;
+&lt;p&gt;   &lt;strong&gt;Front end&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;List of dependencies for that particular gem&lt;/li&gt;
+  &lt;li&gt;Arrow before each dependency which when clicked will display all of that gem’s dependencies&lt;/li&gt;
+  &lt;li&gt;This keeps happening for all dependencies on the page. Once a dependency is clicked, it can’t be clicked again (only toggled for hiding its dependencies).&lt;/li&gt;
+  &lt;li&gt;All dependencies are divided by runtime or development scope&lt;/li&gt;
+  &lt;li&gt;Both dependencies and scopes are togglable&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;   &lt;strong&gt;Back end&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Write a controller to use gem name and version to find its dependencies&lt;/li&gt;
+  &lt;li&gt;Use rubygem code to find best version for each dependency based on it’s requirement&lt;/li&gt;
+  &lt;li&gt;Controller should render html and json (for ajax clicks)&lt;/li&gt;
+  &lt;li&gt;write functional and integration tests&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt; Code Contribution &lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rubygems/rubygems.org/pull/2029&quot;&gt;&lt;strong&gt;Pull request&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rubygems/rubygems.org/pull/2029/files&quot;&gt;&lt;strong&gt;Project file changes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rubygems/rubygems.org/commit/7d73dd270e711c7127225d042ef93492f877d025&quot;&gt;&lt;strong&gt;First commit&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rubygems/rubygems.org/pull/2029/commits&quot;&gt;&lt;strong&gt;Major commits&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Acknowledgement&lt;/h3&gt;
+&lt;p&gt;I’d like to thank my mentors Aditya Prakash and Qui Chaofan for always monitoring my progress, immediately responding and guiding me whenever I needed help. I know I asked a lot of doubts and they helped me every time. I also know I must have been a little difficult to work with, so thank you for having the patience. I owe my wholehearted thanks and appreciation to the entire team of ruby and rubygem.org for selecting me for this project and for their assistance during the entire project work.&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">GSoC Project Draft</title><link href="http://localhost:4000/My-Blog/gsoc/draft2019" rel="alternate" type="text/html" title="GSoC Project Draft" /><published>2019-05-08T00:00:00+05:30</published><updated>2019-05-08T00:00:00+05:30</updated><id>http://localhost:4000/My-Blog/gsoc/GSoC-draft</id><content type="html" xml:base="http://localhost:4000/My-Blog/gsoc/draft2019">&lt;h2&gt;Recursive tree view for gem dependencies&lt;/h2&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Steps to participate in gsoc:&lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Select an organisation or multiple (your wish)&lt;/li&gt;
-    &lt;li&gt;View their idea list (you can also come up with your own idea also)&lt;/li&gt;
-    &lt;li&gt;Choose a project which you like to work on&lt;/li&gt;
-    &lt;li&gt;Contact the mentor to understand more about the project and handle any queries&lt;/li&gt;
-    &lt;li&gt;Write and submit a draft of how you plan to solve the project with timeline breakdowns&lt;/li&gt;
-    &lt;li&gt;While waiting for that result try to start contributing to the organisation&lt;/li&gt;
-  &lt;/ul&gt;
+  &lt;h3&gt;Contact:&lt;/h3&gt;
 &lt;/blockquote&gt;
+
+&lt;p&gt;Name: Nakul K Warrier&lt;br /&gt;
+Email: nakul9597@gmail.com&lt;br /&gt;
+Slackid: nakul9597&lt;br /&gt;
+Blog: &lt;a href=&quot;https://nakul9597.github.io/My-Blog/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;https://nakul9597.github.io/My-Blog/&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;P.S - Contribute to open-source even if you don’t get through&lt;/p&gt;
+  &lt;h3&gt;What project do you want to work on?&lt;/h3&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Below is the story of how I got into GSoC (only read if you are too bored):&lt;/p&gt;
+&lt;p&gt;This project would add a feature on the rubygems.org website to give an option on each gem web page to show a tree of all transitive dependencies needed by that gem. In one of the issues #937 that lead to this project a user talks about how some users download a gem based of it’s transitive dependencies and how they need to keep a mindmap of these transitive dependencies to conclude whether or not to use the gem. This project will help such users get a better idea of whether that gem is for them or not.&lt;/p&gt;
 
-&lt;p&gt;I had looking into GSoC last year and was too late to try and apply. I did however find a good project and email the mentor about that project but with no luck. So then I thought I’ll apply next year. With other things were happening in my life I totally forgot about it. Three days before the final day to submit a draft for GSoC this year my friend happened to mention that he was trying to participate. I felt really bad that I didn’t look at it sooner and thought that I was not going to be able to participate this year as well.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;h3&gt;Why do you like Ruby, and why do you want to work on a Ruby project in GSoC 2019?&lt;/h3&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;I just glanced at organisations that I thought I could participate in and found so many that had many interesting projects. I decided to go with &lt;a href=&quot;https://summerofcode.withgoogle.com/organizations/5542255322988544/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt;&lt;/a&gt; because I know that language the most and had used rails a little before.&lt;/p&gt;
+&lt;p&gt;Firstly, I would like to say that I have a “no idea why” liking towards ruby than any other languages. It could be because Ruby is first high level language that I learnt after C++. As the first language that I begin working with I immediately started liking it. Whenever I get a project I try to work on it with ruby rather than any other language. I also like that fact that everything is an object in ruby. This might be silly but I love that ruby has aliases for some methods making it so easy toremember.&lt;/p&gt;
 
-&lt;p&gt;The lucky thing happened when I was trying to contact the mentor for some project. I didn’t know how to contact them on bundler slack so I put up a message saying I was interested in participating in GSoC for so and so project and would like to talk to the mentor. Since I was short on time I decided to send personal messages (which I later learnt is not a good practice) to members who were frequently replying to other questions. Although I did end by finding the mentor, I ended up talking to another mentor( who I thought was a participant). As soon as I found out he was a mentor I asked him what projects he was overseeing. He suggested that I look into &lt;a href=&quot;https://github.com/rubygsoc/rubygsoc/wiki/Ideas-for-RubyGems#recursive-tree-view-for-gem-dependencies-deciduous_tree&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;this project idea&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I want to work on a ruby project this GSoC mainly because it is the language that i know most and the always active community that is
+ready to help anybody.specifically I want to work on this project because I have some knowledge on rails and postgresql.&lt;/p&gt;
 
-&lt;p&gt;The project seemed very interesting and I became a little confident that I’ll be able to finish it as it had ruby and rails. I immediately started writing a draft on how I was planning to solve the project. My next blog will probably be the draft I submitted. Anyways, I submitted it and got selected for participating in 2019 GSoC. A very happy moment in my life.&lt;/p&gt;</content><author><name></name></author><summary type="html">I have got selected in GSoC program to contribute to the Ruby organisation. Gsoc is a summer internship only for students. It is an initiative started and sponsored by Google to get more developers to contribute to open-source. If selected to participate in GSoC, one has to complete an open-source project within a duration of around 4 months. There are many organisations that are available to choose from in different categories based on your interest.</summary></entry><entry><title type="html">Ruby conversion of rpi_gpio</title><link href="http://localhost:4000/My-Blog/ruby/raspberrypi" rel="alternate" type="text/html" title="Ruby conversion of rpi_gpio" /><published>2018-08-22T00:00:00+05:30</published><updated>2018-08-22T00:00:00+05:30</updated><id>http://localhost:4000/My-Blog/ruby/Ruby-Raspberrypi-GPIO</id><content type="html" xml:base="http://localhost:4000/My-Blog/ruby/raspberrypi">&lt;p&gt;This post is going to be about a ruby gem I found for raspberry pi 3 devices. Most of the raspberry pi 3 users who work on ruby use a gem called &lt;a href=&quot;https://github.com/jwhitehorn/pi_piper&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pi_piper&lt;/code&gt;&lt;/a&gt;. For those who have worked on python and used &lt;code class=&quot;highlighter-rouge&quot;&gt;rpi_gpio&lt;/code&gt; as their main package for controlling I/O pins of the device might find it hard to use &lt;code class=&quot;highlighter-rouge&quot;&gt;pi_piper&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;h3&gt;Describe your experience with the following: Ruby, C, other languages:&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Ruby:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;I have been practicing ruby since past 3 years and have done a lot of exercises on exercism.io in ruby language. My solutions are in this Githublink.&lt;/li&gt;
+  &lt;li&gt;I scripted a redis server with ruby to work with the redis-client calls for some commands.Github Linkto thisproject.&lt;/li&gt;
+  &lt;li&gt;My blog which is not updated is done using jekyll gem from ruby.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;C/C++:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The first language I learnt was C. It was the base for my learning of other high levellanguages.&lt;/li&gt;
+  &lt;li&gt;In class 11th and 12th we were taught C++ and I was very fascinated by data structures(especially linkedlists).&lt;/li&gt;
+  &lt;li&gt;I’ve done a lot of programming using C/C++ during my school and college days.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Python:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;I’ve done a lot of projects on python mainly because all my friends know onlypython.&lt;/li&gt;
+  &lt;li&gt;I did a project for converting the image to json using image recognition and regex in python for billingforms.&lt;/li&gt;
+  &lt;li&gt;In one project Movie Review data sets from IMDB were used, converted to a feature set and fed to a naive bayes classifier model in python NLTK toolkit. The trained model was then tested using some feature sets and the accuracy of the prediction (good review/ bad review) wasreturned.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;h3&gt;Educational background:&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I did major of my schooling in Chennai,Tamil Nadu, India. My 4th to 10th grade education was in Chinmaya Vidyalaya and my higher secondary in Vivekananda Vidyalaya. In my higher secondary I chose Chemistry, Physics, Maths, English and Computer science. I had a very good teacher for CS which helped me score very well in the subject. I was the top scorer of all time for my school in CS for my final exam.&lt;/p&gt;
+
+&lt;p&gt;I am doing my undergrads from SRM Institute of Science and Technology, Chennai. This is my final year and I’ve learnt a lot in the 4 years I’ve been here.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3&gt;Have you sent pull requests to any Ruby open source projects?&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;No, I have not but I’ve always wanted to and GSoC has helped me get two very smart mentor to help me contribute to this ruby open source project. I actually had no idea on how to contribute to open source and all of a sudden in fourth year I hear of GSoC. I never knew about the communities in IRC and slack that is ready to help any newbie. Now that I have got the opportunity I will use it to best of my abilities.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3&gt;What other commitments do you have this summer aside from GSoC?&lt;h3&gt;
+&lt;/h3&gt;&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I don’t have any plans this summer to be honest. I might be going to Australia to pursue my masters. If I get through GSoC I will be fully committed to finishing this and other projects if I have more time.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3&gt;Are you planning any vacations or trips for fun this summer?&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;No vacations.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3&gt;How many classes are you taking this summer?&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I am not taking any classes.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3&gt;Do you have any other employment this summer?&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;No as of now. I won’t be applying until GSoC is over.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3&gt;Have you participated in GSoC before?&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;No, This would be my first time.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3&gt;Proposal:&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This project is based on giving users an option to find all transitive dependencies of a gem. This is done by creating a page where a DAG will show all the dependencies of that gem and the link is available on the every gem web page. It will help a lot of users decide if they want to download the gem for their project.&lt;/p&gt;
+
+&lt;p&gt;The hook is that different version of the same gem can also have different dependencies. So the DAG must not be generic to a gem. This is can be easily found as the database that stores all the data has stored it with different versions and its related dependencies in two different tables(dependencies and versions). When the new page to show dependencies is clicked the version also must be passed as an argument.&lt;/p&gt;
+
+&lt;p&gt;In the new page we show a limit depth of dependencies which can be expanded/minimised by the user. This can be coded with CSS and JS along with Embedded Ruby.&lt;/p&gt;
+
+&lt;p&gt;I’m a little familiar with rails and it’s MVC framework design. So I shouldn’t take a long time to understand how the app runs and how to code in the application. Also I’ve worked with postgres with rails in small detail but enough to know where to start and learn my way to work with
+it. The part that will take a while is to design the webpage to look very user friendly and neat.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3&gt;What is your expected timeline?&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Community Bonding (before 27th may)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve already cloned the rubygems.org rails app on my system and also updated the database thanks to help from my mentors. Before the first iteration I would like to get comfortable with:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Railsworking&lt;/li&gt;
+  &lt;li&gt;Postgres&lt;/li&gt;
+  &lt;li&gt;Postgres coding inrails&lt;/li&gt;
+  &lt;li&gt;CSS and JS along withEmbeddedRuby(ERB).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Iteration 1 - Simple dependencies page (28 may - 23 june)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create a new page in rubygems.org for dependencies treeview.&lt;/li&gt;
+  &lt;li&gt;Use the postgresql database values to get list ofdependencies.&lt;/li&gt;
+  &lt;li&gt;Use basic ERB, CSS and JS to show the dependencies on this webpage.&lt;/li&gt;
+  &lt;li&gt;Provide the link on gemwebpage.&lt;/li&gt;
+  &lt;li&gt;Start Writing test cases for theproject.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;First evaluation (24 june - 28 june)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Hopefully, by this time we will be able to view the list of gem dependencies on a separate webpage. Some important test cases must run with assertions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Iteration 2 - Better designing (29 june - 21 july)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Make the webpage in design sync with the rubygems.orgtemplate.&lt;/li&gt;
+  &lt;li&gt;Get the design better by making depth limited dependencies in first view and others can be maximised/minimised according tothe
+users wish. We could usethis viewor anaccordion menu.Arrow marks could be used for dependencies with further dependencies(which can be expanded) and circle for those without.&lt;/li&gt;
+  &lt;li&gt;Create a DAG where dependencies don’t repeat each time. This could be achieved by highlighting dependencies(to show that it is already present as a dependency) that come to repeat each other and by not letting it expandfurther.&lt;/li&gt;
+  &lt;li&gt;Classify the dependencies as runtime or development.&lt;/li&gt;
+  &lt;li&gt;Finish writing test cases for theproject.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Second evaluation (22 july - 26 july)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;By this time a fully functional web page for view of dependencies must be available for users to view. Test cases must run with assertions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Iteration 3 - Even better designing(27 july - 18 august)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We could keepthis designas an option for users who want a better graphicalview.&lt;/li&gt;
+  &lt;li&gt;Search bar for users to check if a gem is part of thedependencies.&lt;/li&gt;
+  &lt;li&gt;Give details like total size the dependencies will take if the gem is downloaded.&lt;/li&gt;
+  &lt;li&gt;Write final test cases for all the new ideas and features implemented.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In this final iteration, on working so much in this project me and my mentors would have come up with ideas that could be implemented. So I would implement those as well.&lt;/p&gt;
+
+&lt;p&gt;Also, I would give myself a week time before the final evaluation to check and test the project from scratch.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Final Evaluation (19 august - 26 august)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;During this time the project should be completed, tested and verified by the mentors.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3&gt;What are your hobbies, aside from coding?&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I sketch a lot(portrait sketching). I am a singer and also part of a college band. I am part of crew that makes short films, where I do acting, writing, screenplay. I’m learning to play the guitar.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3&gt;What I want to do with my life?&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I have not yet decided.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3&gt;Why choose you for this project? What makes you a good candidate?&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I think that i’m a good candidate because I have at least a little prior experience in the fields related to this project from my past experiences. Also I have always wanted to contribute to open source but I never knew how to and had nobody to guide me. I am that type of person who can sit for hours debugging and coding without getting frustrated. For example: I once made a small home automation system using raspberry pi 3 and RoRovernight.&lt;/p&gt;
+
+&lt;p&gt;More importantly I am free for the whole term of GSoC and willing to spend all my time to finishing this project. I love to learn new things and spend time understanding the concept. I’m very sure i’ll be able to complete the project before the final review.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3&gt;How do you think we can get more women interested in open source software development and science? How can we get more people from underrepresented groups involved?&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I think that most women don’t get the opportunity to even get a glimpse of open source but if they did it might open up a realm of reality to them. Most women especially in India are not expected to do a lot of work and have very conservative parents. For those who are ready to learn, I think nobody is ready to guide them or they feel ashamed to ask somebody for help. Moreover, there is this stereotype that only men get into the field of computer science which has tochange.&lt;/p&gt;
+
+&lt;p&gt;I think that by the next generation the number of women/men who will take part will automatically increase because of the way of thinking in the current generation.&lt;/p&gt;
+
+&lt;p&gt;We could spread awareness to people around us to get them into open source. We could guide them and connect them with people who are ready to help.&lt;/p&gt;</content><author><name></name></author><summary type="html">Recursive tree view for gem dependencies</summary></entry><entry><title type="html">GSoC Acceptance</title><link href="http://localhost:4000/My-Blog/gsoc/acceptance" rel="alternate" type="text/html" title="GSoC Acceptance" /><published>2019-05-07T00:00:00+05:30</published><updated>2019-05-07T00:00:00+05:30</updated><id>http://localhost:4000/My-Blog/gsoc/GSoC-Acceptance</id><content type="html" xml:base="http://localhost:4000/My-Blog/gsoc/acceptance">&lt;p&gt;I have got selected in &lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GSoC&lt;/code&gt;&lt;/a&gt; program to contribute to the Ruby organisation. Gsoc is a summer internship only for students. It is an initiative started and sponsored by Google to get more developers to contribute to open-source. If selected to participate in GSoC, one has to complete an open-source project within a duration of around 4 months. There are many &lt;a href=&quot;https://summerofcode.withgoogle.com/organizations/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;organisations&lt;/code&gt;&lt;/a&gt; that are available to choose from in different categories based on your interest.&lt;/p&gt;
+
+&lt;p&gt;Steps to participate in gsoc:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Select an organisation or multiple (your wish)&lt;/li&gt;
+  &lt;li&gt;View their idea list (you can also come up with your own idea also)&lt;/li&gt;
+  &lt;li&gt;Choose a project which you like to work on&lt;/li&gt;
+  &lt;li&gt;Contact the mentor to understand more about the project and handle any queries&lt;/li&gt;
+  &lt;li&gt;Write and submit a draft of how you plan to solve the project with timeline breakdowns&lt;/li&gt;
+  &lt;li&gt;While waiting for that result try to start contributing to the organisation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Below is the story of how I got into GSoC (only read if you are too bored):&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;    I had looking into GSoC last year and was too late to try and apply. I did however find a good project and email the mentor about that project but with no luck. So then I thought I’ll apply next year. With other things were happening in my life I totally forgot about it. Three days before the final day to submit a draft for GSoC this year my friend happened to mention that he was trying to participate. I felt really bad that I didn’t look at it sooner and thought that I was not going to be able to participate this year as well.&lt;/p&gt;
+
+&lt;p&gt;    I just glanced at organisations that I thought I could participate in and found so many that had many interesting projects. I decided to go with &lt;a href=&quot;https://summerofcode.withgoogle.com/organizations/5542255322988544/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt;&lt;/a&gt; because I know that language the most and had used rails a little before.&lt;/p&gt;
+
+&lt;p&gt;    The lucky thing happened when I was trying to contact the mentor for some project. I didn’t know how to contact them on bundler slack so I put up a message saying I was interested in participating in GSoC for so and so project and would like to talk to the mentor. Since I was short on time I decided to send personal messages (which I later learnt is not a good practice) to members who were frequently replying to other questions. Although I did end by finding the mentor, I ended up talking to another mentor( who I thought was a participant). As soon as I found out he was a mentor I asked him what projects he was overseeing. He suggested that I look into &lt;a href=&quot;https://github.com/rubygsoc/rubygsoc/wiki/Ideas-for-RubyGems#recursive-tree-view-for-gem-dependencies-deciduous_tree&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;this project idea&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;    The project seemed very interesting and I became a little confident that I’ll be able to finish it as it had ruby and rails. I immediately started writing a draft on how I was planning to solve the project. My next blog will probably be the draft I submitted. Anyways, I submitted it and got selected for participating in 2019 GSoC. A very happy moment in my life.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3&gt;P.S - Contribute to open-source even if you don't get through&lt;/h3&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">I have got selected in GSoC program to contribute to the Ruby organisation. Gsoc is a summer internship only for students. It is an initiative started and sponsored by Google to get more developers to contribute to open-source. If selected to participate in GSoC, one has to complete an open-source project within a duration of around 4 months. There are many organisations that are available to choose from in different categories based on your interest.</summary></entry><entry><title type="html">Ruby conversion of rpi_gpio</title><link href="http://localhost:4000/My-Blog/ruby/raspberrypi" rel="alternate" type="text/html" title="Ruby conversion of rpi_gpio" /><published>2018-08-22T00:00:00+05:30</published><updated>2018-08-22T00:00:00+05:30</updated><id>http://localhost:4000/My-Blog/ruby/Ruby-Raspberrypi-GPIO</id><content type="html" xml:base="http://localhost:4000/My-Blog/ruby/raspberrypi">&lt;p&gt;This post is going to be about a ruby gem I found for raspberry pi 3 devices. Most of the raspberry pi 3 users who work on ruby use a gem called &lt;a href=&quot;https://github.com/jwhitehorn/pi_piper&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pi_piper&lt;/code&gt;&lt;/a&gt;. For those who have worked on python and used &lt;code class=&quot;highlighter-rouge&quot;&gt;rpi_gpio&lt;/code&gt; as their main package for controlling I/O pins of the device might find it hard to use &lt;code class=&quot;highlighter-rouge&quot;&gt;pi_piper&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;This gem &lt;a href=&quot;https://github.com/ClockVapor/rpi_gpio&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rpi_gpio&lt;/code&gt;&lt;/a&gt; is the ruby conversion of &lt;a href=&quot;https://sourceforge.net/projects/raspberry-gpio-python/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rpi_gpio&lt;/code&gt;&lt;/a&gt; python module. It works just like how to python module works and so the syntax is very similar. I’m not very sure whether it can used in big applications because the python module is not suggested to be used in time critical applications. This is because we can’t predict when python will be busy collecting garbage. Ruby uses a different garbage collection technique and so this gem might be more efficient.&lt;/p&gt;
 

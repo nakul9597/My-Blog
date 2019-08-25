@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>GSoC Final Report</title>
+  <meta name="description" content="">
+
+  
+  
+  <link rel="stylesheet" href="http://localhost:4000/My-Blog/assets/style.css">
+
+  <link rel="canonical" href="http://localhost:4000/My-Blog/gsoc/final_report">
+  <link rel="alternate" type="application/rss+xml" title="My Blog" href="http://localhost:4000/My-Blog/feed.xml">
+
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="border-bottom-thick px-2 clearfix">
+  <div class="left sm-width-full py-1 mt-1 mt-lg-0">
+    <a class="align-middle link-primary text-accent" href="/My-Blog/">
+      My Blog
+    </a>
+  </div>
+  <div class="right sm-width-full">
+    <ul class="list-reset mt-lg-1 mb-2 mb-lg-1">
+      
+        
+      
+        
+        <li class="inline-block">
+          <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="/My-Blog/about/">
+            About
+          </a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</header>
+
+
+    <div>
+      <article class="container px-2 mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting">
+  <h1 class="h0 col-9 sm-width-full py-4 mt-3 inline-block" itemprop="name headline">GSoC Final Report</h1>
+  <div class="col-4 sm-width-full mt-1 border-top-thin ">
+    <p class="mb-3 py-2 bold h4"><time datetime="2019-08-24T00:00:00+05:30" itemprop="datePublished">Aug 24, 2019</time></p>
+  </div>
+
+  <div class="prose" itemprop="articleBody">
+      <center><img src="/My-Blog/gsoc_logo.png" width="350" align="left" /><img src="/My-Blog/ruby_logo.png" width="350" /></center>
+
+<p><strong>Organisation</strong> : <a href="https://summerofcode.withgoogle.com/organizations/5542255322988544/"><code class="highlighter-rouge">Ruby</code></a></p>
+
+<p><strong>Project</strong>: <a href="https://github.com/rubygems/rubygems.org"><code class="highlighter-rouge">rubygems.org</code></a></p>
+
+<p><strong>Project page</strong>: <a href="https://summerofcode.withgoogle.com/projects/#4782705487642624"><code class="highlighter-rouge">Recursive tree view for gem dependencies</code></a></p>
+
+<p><strong>Mentors</strong>: <a href="https://github.com/sonalkr132"><code class="highlighter-rouge">Aditya Prakash</code></a> and <a href="https://github.com/ecnelises"><code class="highlighter-rouge">Qiu Chaofan</code></a></p>
+
+<h2>Recursive tree view for gem dependencies</h2>
+
+<h3>Abstract</h3>
+<p>This project would add a feature on the rubygems.org website to give an option on each gem web page to show a tree/DAG of all transitive dependencies needed by that gem. In one of the <a href="https://github.com/rubygems/rubygems.org/issues/937"><code class="highlighter-rouge">issue</code></a> that lead to this project, a user talks about how some users download a gem based of it’s transitive dependencies and how they need to keep a mindmap of these transitive dependencies to conclude whether or not to use the gem. This project will help such users get a better idea of whether that gem is for them or not.</p>
+
+<h3>Road Map</h3>
+<p>   <strong>Front end</strong></p>
+<ul>
+  <li>List of dependencies for that particular gem</li>
+  <li>Arrow before each dependency which when clicked will display all of that gem’s dependencies</li>
+  <li>This keeps happening for all dependencies on the page. Once a dependency is clicked, it can’t be clicked again (only toggled for hiding its dependencies).</li>
+  <li>All dependencies are divided by runtime or development scope</li>
+  <li>Both dependencies and scopes are togglable</li>
+</ul>
+
+<p>   <strong>Back end</strong></p>
+<ul>
+  <li>Write a controller to use gem name and version to find its dependencies</li>
+  <li>Use rubygem code to find best version for each dependency based on it’s requirement</li>
+  <li>Controller should render html and json (for ajax clicks)</li>
+  <li>write functional and integration tests</li>
+</ul>
+
+<h3> Code Contribution </h3>
+<ul>
+  <li><a href="https://github.com/rubygems/rubygems.org/pull/2029"><strong>Pull request</strong></a></li>
+  <li><a href="https://github.com/rubygems/rubygems.org/pull/2029/files"><strong>Project file changes</strong></a></li>
+  <li><a href="https://github.com/rubygems/rubygems.org/commit/7d73dd270e711c7127225d042ef93492f877d025"><strong>First commit</strong></a></li>
+  <li><a href="https://github.com/rubygems/rubygems.org/pull/2029/commits"><strong>Major commits</strong></a></li>
+</ul>
+
+<h3>Acknowledgement</h3>
+<p>I’d like to thank my mentors Aditya Prakash and Qui Chaofan for always monitoring my progress, immediately responding and guiding me whenever I needed help. I know I asked a lot of doubts and they helped me every time. I also know I must have been a little difficult to work with, so thank you for having the patience. I owe my wholehearted thanks and appreciation to the entire team of ruby and rubygem.org for selecting me for this project and for their assistance during the entire project work.</p>
+
+
+  </div>
+
+</article>
+
+<div class="container mx-auto px-2 py-2 clearfix">
+  <!-- Use if you want to show previous and next for all posts. -->
+
+
+
+  <div class="col-4 sm-width-full left mr-lg-4 mt-3">
+    <a class="no-underline border-top-thin py-1 block" href="http://localhost:4000/My-Blog/gsoc/draft2019">
+      <span class="h5 bold text-accent">Previous</span>
+      <p class="bold h3 link-primary mb-1">GSoC Project Draft</p>
+      <p>Recursive tree view for gem dependencies Contact: Name: Nakul K Warrier Email: nakul9597@gmail.com Slackid: nakul9597 Blog: https://nakul9597.github.io/My-Blog/ What project do...</p>
+    </a>
+  </div>
+  
+  
+
+</div>
+
+    </div>
+
+    <div class="border-top-thin clearfix mt-2 mt-lg-4">
+  <div class="container mx-auto px-2">
+    <p class="col-8 sm-width-full left py-2 mb-0">This project is maintained by <a class="text-accent" href="https://github.com/nakul9597">nakul9597</a></p>
+    <ul class="list-reset right clearfix sm-width-full py-2 mb-2 mb-lg-0">
+      <li class="inline-block mr-1">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="My Blog">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li class="inline-block">
+        <a class="github-button" href="https://github.com/nakul9597/" data-icon="octicon-star" data-count-href="nakul9597//stargazers" data-count-api="/repos/nakul9597/#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star nakul9597/ on GitHub">Star</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+  </body>
+
+</html>

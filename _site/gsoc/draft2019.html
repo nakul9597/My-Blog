@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>GSoC Project Draft</title>
+  <meta name="description" content="Recursive tree view for gem dependencies">
+
+  
+  
+  <link rel="stylesheet" href="http://localhost:4000/My-Blog/assets/style.css">
+
+  <link rel="canonical" href="http://localhost:4000/My-Blog/gsoc/draft2019">
+  <link rel="alternate" type="application/rss+xml" title="My Blog" href="http://localhost:4000/My-Blog/feed.xml">
+
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="border-bottom-thick px-2 clearfix">
+  <div class="left sm-width-full py-1 mt-1 mt-lg-0">
+    <a class="align-middle link-primary text-accent" href="/My-Blog/">
+      My Blog
+    </a>
+  </div>
+  <div class="right sm-width-full">
+    <ul class="list-reset mt-lg-1 mb-2 mb-lg-1">
+      
+        
+      
+        
+        <li class="inline-block">
+          <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="/My-Blog/about/">
+            About
+          </a>
+        </li>
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</header>
+
+
+    <div>
+      <article class="container px-2 mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting">
+  <h1 class="h0 col-9 sm-width-full py-4 mt-3 inline-block" itemprop="name headline">GSoC Project Draft</h1>
+  <div class="col-4 sm-width-full mt-1 border-top-thin ">
+    <p class="mb-3 py-2 bold h4"><time datetime="2019-05-08T00:00:00+05:30" itemprop="datePublished">May 8, 2019</time></p>
+  </div>
+
+  <div class="prose" itemprop="articleBody">
+      <h2>Recursive tree view for gem dependencies</h2>
+
+<blockquote>
+  <h3>Contact:</h3>
+</blockquote>
+
+<p>Name: Nakul K Warrier<br />
+Email: nakul9597@gmail.com<br />
+Slackid: nakul9597<br />
+Blog: <a href="https://nakul9597.github.io/My-Blog/"><code class="highlighter-rouge">https://nakul9597.github.io/My-Blog/</code></a></p>
+
+<blockquote>
+  <h3>What project do you want to work on?</h3>
+</blockquote>
+
+<p>This project would add a feature on the rubygems.org website to give an option on each gem web page to show a tree of all transitive dependencies needed by that gem. In one of the issues #937 that lead to this project a user talks about how some users download a gem based of it’s transitive dependencies and how they need to keep a mindmap of these transitive dependencies to conclude whether or not to use the gem. This project will help such users get a better idea of whether that gem is for them or not.</p>
+
+<blockquote>
+  <h3>Why do you like Ruby, and why do you want to work on a Ruby project in GSoC 2019?</h3>
+</blockquote>
+
+<p>Firstly, I would like to say that I have a “no idea why” liking towards ruby than any other languages. It could be because Ruby is first high level language that I learnt after C++. As the first language that I begin working with I immediately started liking it. Whenever I get a project I try to work on it with ruby rather than any other language. I also like that fact that everything is an object in ruby. This might be silly but I love that ruby has aliases for some methods making it so easy toremember.</p>
+
+<p>I want to work on a ruby project this GSoC mainly because it is the language that i know most and the always active community that is
+ready to help anybody.specifically I want to work on this project because I have some knowledge on rails and postgresql.</p>
+
+<blockquote>
+  <h3>Describe your experience with the following: Ruby, C, other languages:</h3>
+</blockquote>
+
+<p><strong>Ruby:</strong></p>
+<ul>
+  <li>I have been practicing ruby since past 3 years and have done a lot of exercises on exercism.io in ruby language. My solutions are in this Githublink.</li>
+  <li>I scripted a redis server with ruby to work with the redis-client calls for some commands.Github Linkto thisproject.</li>
+  <li>My blog which is not updated is done using jekyll gem from ruby.</li>
+</ul>
+
+<p><strong>C/C++:</strong></p>
+<ul>
+  <li>The first language I learnt was C. It was the base for my learning of other high levellanguages.</li>
+  <li>In class 11th and 12th we were taught C++ and I was very fascinated by data structures(especially linkedlists).</li>
+  <li>I’ve done a lot of programming using C/C++ during my school and college days.</li>
+</ul>
+
+<p><strong>Python:</strong></p>
+<ul>
+  <li>I’ve done a lot of projects on python mainly because all my friends know onlypython.</li>
+  <li>I did a project for converting the image to json using image recognition and regex in python for billingforms.</li>
+  <li>In one project Movie Review data sets from IMDB were used, converted to a feature set and fed to a naive bayes classifier model in python NLTK toolkit. The trained model was then tested using some feature sets and the accuracy of the prediction (good review/ bad review) wasreturned.</li>
+</ul>
+
+<blockquote>
+  <h3>Educational background:</h3>
+</blockquote>
+
+<p>I did major of my schooling in Chennai,Tamil Nadu, India. My 4th to 10th grade education was in Chinmaya Vidyalaya and my higher secondary in Vivekananda Vidyalaya. In my higher secondary I chose Chemistry, Physics, Maths, English and Computer science. I had a very good teacher for CS which helped me score very well in the subject. I was the top scorer of all time for my school in CS for my final exam.</p>
+
+<p>I am doing my undergrads from SRM Institute of Science and Technology, Chennai. This is my final year and I’ve learnt a lot in the 4 years I’ve been here.</p>
+
+<blockquote>
+  <h3>Have you sent pull requests to any Ruby open source projects?</h3>
+</blockquote>
+
+<p>No, I have not but I’ve always wanted to and GSoC has helped me get two very smart mentor to help me contribute to this ruby open source project. I actually had no idea on how to contribute to open source and all of a sudden in fourth year I hear of GSoC. I never knew about the communities in IRC and slack that is ready to help any newbie. Now that I have got the opportunity I will use it to best of my abilities.</p>
+
+<blockquote>
+  <h3>What other commitments do you have this summer aside from GSoC?<h3>
+</h3></h3>
+</blockquote>
+
+<p>I don’t have any plans this summer to be honest. I might be going to Australia to pursue my masters. If I get through GSoC I will be fully committed to finishing this and other projects if I have more time.</p>
+
+<blockquote>
+  <h3>Are you planning any vacations or trips for fun this summer?</h3>
+</blockquote>
+
+<p>No vacations.</p>
+
+<blockquote>
+  <h3>How many classes are you taking this summer?</h3>
+</blockquote>
+
+<p>I am not taking any classes.</p>
+
+<blockquote>
+  <h3>Do you have any other employment this summer?</h3>
+</blockquote>
+
+<p>No as of now. I won’t be applying until GSoC is over.</p>
+
+<blockquote>
+  <h3>Have you participated in GSoC before?</h3>
+</blockquote>
+
+<p>No, This would be my first time.</p>
+
+<blockquote>
+  <h3>Proposal:</h3>
+</blockquote>
+
+<p>This project is based on giving users an option to find all transitive dependencies of a gem. This is done by creating a page where a DAG will show all the dependencies of that gem and the link is available on the every gem web page. It will help a lot of users decide if they want to download the gem for their project.</p>
+
+<p>The hook is that different version of the same gem can also have different dependencies. So the DAG must not be generic to a gem. This is can be easily found as the database that stores all the data has stored it with different versions and its related dependencies in two different tables(dependencies and versions). When the new page to show dependencies is clicked the version also must be passed as an argument.</p>
+
+<p>In the new page we show a limit depth of dependencies which can be expanded/minimised by the user. This can be coded with CSS and JS along with Embedded Ruby.</p>
+
+<p>I’m a little familiar with rails and it’s MVC framework design. So I shouldn’t take a long time to understand how the app runs and how to code in the application. Also I’ve worked with postgres with rails in small detail but enough to know where to start and learn my way to work with
+it. The part that will take a while is to design the webpage to look very user friendly and neat.</p>
+
+<blockquote>
+  <h3>What is your expected timeline?</h3>
+</blockquote>
+
+<p><strong>Community Bonding (before 27th may)</strong></p>
+
+<p>I’ve already cloned the rubygems.org rails app on my system and also updated the database thanks to help from my mentors. Before the first iteration I would like to get comfortable with:</p>
+<ul>
+  <li>Railsworking</li>
+  <li>Postgres</li>
+  <li>Postgres coding inrails</li>
+  <li>CSS and JS along withEmbeddedRuby(ERB).</li>
+</ul>
+
+<p><strong>Iteration 1 - Simple dependencies page (28 may - 23 june)</strong></p>
+
+<ul>
+  <li>Create a new page in rubygems.org for dependencies treeview.</li>
+  <li>Use the postgresql database values to get list ofdependencies.</li>
+  <li>Use basic ERB, CSS and JS to show the dependencies on this webpage.</li>
+  <li>Provide the link on gemwebpage.</li>
+  <li>Start Writing test cases for theproject.</li>
+</ul>
+
+<p><strong>First evaluation (24 june - 28 june)</strong></p>
+
+<p>Hopefully, by this time we will be able to view the list of gem dependencies on a separate webpage. Some important test cases must run with assertions.</p>
+
+<p><strong>Iteration 2 - Better designing (29 june - 21 july)</strong></p>
+
+<ul>
+  <li>Make the webpage in design sync with the rubygems.orgtemplate.</li>
+  <li>Get the design better by making depth limited dependencies in first view and others can be maximised/minimised according tothe
+users wish. We could usethis viewor anaccordion menu.Arrow marks could be used for dependencies with further dependencies(which can be expanded) and circle for those without.</li>
+  <li>Create a DAG where dependencies don’t repeat each time. This could be achieved by highlighting dependencies(to show that it is already present as a dependency) that come to repeat each other and by not letting it expandfurther.</li>
+  <li>Classify the dependencies as runtime or development.</li>
+  <li>Finish writing test cases for theproject.</li>
+</ul>
+
+<p><strong>Second evaluation (22 july - 26 july)</strong></p>
+
+<p>By this time a fully functional web page for view of dependencies must be available for users to view. Test cases must run with assertions.</p>
+
+<p><strong>Iteration 3 - Even better designing(27 july - 18 august)</strong></p>
+
+<ul>
+  <li>We could keepthis designas an option for users who want a better graphicalview.</li>
+  <li>Search bar for users to check if a gem is part of thedependencies.</li>
+  <li>Give details like total size the dependencies will take if the gem is downloaded.</li>
+  <li>Write final test cases for all the new ideas and features implemented.</li>
+</ul>
+
+<p>In this final iteration, on working so much in this project me and my mentors would have come up with ideas that could be implemented. So I would implement those as well.</p>
+
+<p>Also, I would give myself a week time before the final evaluation to check and test the project from scratch.</p>
+
+<p><strong>Final Evaluation (19 august - 26 august)</strong></p>
+
+<p>During this time the project should be completed, tested and verified by the mentors.</p>
+
+<blockquote>
+  <h3>What are your hobbies, aside from coding?</h3>
+</blockquote>
+
+<p>I sketch a lot(portrait sketching). I am a singer and also part of a college band. I am part of crew that makes short films, where I do acting, writing, screenplay. I’m learning to play the guitar.</p>
+
+<blockquote>
+  <h3>What I want to do with my life?</h3>
+</blockquote>
+
+<p>I have not yet decided.</p>
+
+<blockquote>
+  <h3>Why choose you for this project? What makes you a good candidate?</h3>
+</blockquote>
+
+<p>I think that i’m a good candidate because I have at least a little prior experience in the fields related to this project from my past experiences. Also I have always wanted to contribute to open source but I never knew how to and had nobody to guide me. I am that type of person who can sit for hours debugging and coding without getting frustrated. For example: I once made a small home automation system using raspberry pi 3 and RoRovernight.</p>
+
+<p>More importantly I am free for the whole term of GSoC and willing to spend all my time to finishing this project. I love to learn new things and spend time understanding the concept. I’m very sure i’ll be able to complete the project before the final review.</p>
+
+<blockquote>
+  <h3>How do you think we can get more women interested in open source software development and science? How can we get more people from underrepresented groups involved?</h3>
+</blockquote>
+
+<p>I think that most women don’t get the opportunity to even get a glimpse of open source but if they did it might open up a realm of reality to them. Most women especially in India are not expected to do a lot of work and have very conservative parents. For those who are ready to learn, I think nobody is ready to guide them or they feel ashamed to ask somebody for help. Moreover, there is this stereotype that only men get into the field of computer science which has tochange.</p>
+
+<p>I think that by the next generation the number of women/men who will take part will automatically increase because of the way of thinking in the current generation.</p>
+
+<p>We could spread awareness to people around us to get them into open source. We could guide them and connect them with people who are ready to help.</p>
+
+
+  </div>
+
+</article>
+
+<div class="container mx-auto px-2 py-2 clearfix">
+  <!-- Use if you want to show previous and next for all posts. -->
+
+
+
+  <div class="col-4 sm-width-full left mr-lg-4 mt-3">
+    <a class="no-underline border-top-thin py-1 block" href="http://localhost:4000/My-Blog/gsoc/acceptance">
+      <span class="h5 bold text-accent">Previous</span>
+      <p class="bold h3 link-primary mb-1">GSoC Acceptance</p>
+      <p>I have got selected in GSoC program to contribute to the Ruby organisation. Gsoc is a summer internship only for...</p>
+    </a>
+  </div>
+  
+  
+  <div class="col-4 sm-width-full left mt-3">
+    <a class="no-underline border-top-thin py-1 block" href="http://localhost:4000/My-Blog/gsoc/final_report">
+      <span class="h5 bold text-accent">Next</span>
+      <p class="bold h3 link-primary mb-1">GSoC Final Report</p>
+      <p>**Organisation** : [`Ruby`][ruby_org_gsoc] **Project**: [`rubygems.org`][rubygems_github] **Project page**: [`Recursive tree view for gem dependencies`][gsoc_project] **Mentors**: [`Aditya Prakash`][aditya] and [`Qiu Chaofan`][qiu] Recursive...</p>
+    </a>
+  </div>
+
+
+</div>
+
+    </div>
+
+    <div class="border-top-thin clearfix mt-2 mt-lg-4">
+  <div class="container mx-auto px-2">
+    <p class="col-8 sm-width-full left py-2 mb-0">This project is maintained by <a class="text-accent" href="https://github.com/nakul9597">nakul9597</a></p>
+    <ul class="list-reset right clearfix sm-width-full py-2 mb-2 mb-lg-0">
+      <li class="inline-block mr-1">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="My Blog">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li class="inline-block">
+        <a class="github-button" href="https://github.com/nakul9597/" data-icon="octicon-star" data-count-href="nakul9597//stargazers" data-count-api="/repos/nakul9597/#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star nakul9597/ on GitHub">Star</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+  </body>
+
+</html>
