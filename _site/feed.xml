@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/My-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/My-Blog/" rel="alternate" type="text/html" /><updated>2019-08-25T19:25:49+05:30</updated><id>http://localhost:4000/My-Blog/feed.xml</id><title type="html">Nakul’s Tech Blog</title><subtitle></subtitle><entry><title type="html">GSoC Final Report</title><link href="http://localhost:4000/My-Blog/gsoc/final_report" rel="alternate" type="text/html" title="GSoC Final Report" /><published>2019-08-24T00:00:00+05:30</published><updated>2019-08-24T00:00:00+05:30</updated><id>http://localhost:4000/My-Blog/gsoc/GSoC-Final-Report</id><content type="html" xml:base="http://localhost:4000/My-Blog/gsoc/final_report">&lt;center&gt;&lt;img src=&quot;/My-Blog/gsoc_logo.png&quot; width=&quot;350&quot; align=&quot;left&quot; /&gt;&lt;img src=&quot;/My-Blog/ruby_logo.png&quot; width=&quot;350&quot; /&gt;&lt;/center&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/My-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/My-Blog/" rel="alternate" type="text/html" /><updated>2019-08-26T12:36:09+05:30</updated><id>http://localhost:4000/My-Blog/feed.xml</id><title type="html">Nakul’s Tech Blog</title><subtitle></subtitle><entry><title type="html">GSoC Final Report</title><link href="http://localhost:4000/My-Blog/gsoc/final_report" rel="alternate" type="text/html" title="GSoC Final Report" /><published>2019-08-24T00:00:00+05:30</published><updated>2019-08-24T00:00:00+05:30</updated><id>http://localhost:4000/My-Blog/gsoc/GSoC-Final-Report</id><content type="html" xml:base="http://localhost:4000/My-Blog/gsoc/final_report">&lt;center&gt;&lt;img src=&quot;/My-Blog/gsoc_logo.png&quot; width=&quot;350&quot; align=&quot;left&quot; /&gt;&lt;img src=&quot;/My-Blog/ruby_logo.png&quot; width=&quot;350&quot; /&gt;&lt;/center&gt;
 
 &lt;p&gt;&lt;strong&gt;Organisation&lt;/strong&gt; : &lt;a href=&quot;https://summerofcode.withgoogle.com/organizations/5542255322988544/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Ruby&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -31,11 +31,27 @@
   &lt;li&gt;write functional and integration tests&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h3&gt;The Story So Far&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;First created a web page that displays all the transitive dependencies list in ascending order
+    &lt;ul&gt;
+      &lt;li&gt;It was taking too long to load and not very user friendly&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Created basic webpage with toggling&lt;/li&gt;
+  &lt;li&gt;Added ajax request to find transitive dependencies but creating a js file in view&lt;/li&gt;
+  &lt;li&gt;Made toggling possible to open and close dependencies&lt;/li&gt;
+  &lt;li&gt;Moved the js file to asset pipeline thus making ajax requests client side&lt;/li&gt;
+  &lt;li&gt;Added functional test case for controller and integration test for js&lt;/li&gt;
+  &lt;li&gt;Seperated view as runtime and development dependencies, also togglable to be hidden&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h3&gt; Code Contribution &lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/rubygems/rubygems.org/pull/2029&quot;&gt;&lt;strong&gt;Pull request&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/rubygems/rubygems.org/pull/2029/files&quot;&gt;&lt;strong&gt;Project file changes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/rubygems/rubygems.org/commit/7d73dd270e711c7127225d042ef93492f877d025&quot;&gt;&lt;strong&gt;First commit&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rubygems/rubygems.org/pull/2029/commits/a50e82ea387a0c21745bf92e4dcfd94ab7782469&quot;&gt;&lt;strong&gt;Last commit&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/rubygems/rubygems.org/pull/2029/commits&quot;&gt;&lt;strong&gt;Major commits&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 

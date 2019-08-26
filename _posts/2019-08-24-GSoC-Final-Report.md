@@ -32,10 +32,21 @@ This project would add a feature on the rubygems.org website to give an option o
 * Controller should render html and json (for ajax clicks)
 * write functional and integration tests
 
+<h3>The Story So Far</h3>
+* First created a web page that displays all the transitive dependencies list in ascending order
+  * It was taking too long to load and not very user friendly
+* Created basic webpage with toggling
+* Added ajax request to find transitive dependencies but creating a js file in view
+* Made toggling possible to open and close dependencies
+* Moved the js file to asset pipeline thus making ajax requests client side
+* Added functional test case for controller and integration test for js
+* Seperated view as runtime and development dependencies, also togglable to be hidden
+
 <h3> Code Contribution </h3>
 * [**Pull request**][project_pr]
 * [**Project file changes**][change_file]
 * [**First commit**][c1]
+* [**Last commit**][lc]
 * [**Major commits**][commit]
 
 <h3>Acknowledgement</h3>
@@ -51,6 +62,7 @@ I'd like to thank my mentors Aditya Prakash and Qui Chaofan for always monitorin
 [change_file]: https://github.com/rubygems/rubygems.org/pull/2029/files
 [project_pr]: https://github.com/rubygems/rubygems.org/pull/2029
 [commit]: https://github.com/rubygems/rubygems.org/pull/2029/commits
+[lc]: https://github.com/rubygems/rubygems.org/pull/2029/commits/a50e82ea387a0c21745bf92e4dcfd94ab7782469
 [c1]: https://github.com/rubygems/rubygems.org/commit/7d73dd270e711c7127225d042ef93492f877d025
 [c2]: https://github.com/rubygems/rubygems.org/commit/0cf105832372571b9692cc243723cdb760004211
 [c3]: https://github.com/rubygems/rubygems.org/commit/8a225c728652b5ec97de1ce386af9a25f1872cbc
