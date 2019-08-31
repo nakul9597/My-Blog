@@ -52,6 +52,14 @@ This project would add a feature on the rubygems.org website to give an option o
 <h3>Acknowledgement</h3>
 I'd like to thank my mentors Aditya Prakash and Qui Chaofan for always monitoring my progress, immediately responding and guiding me whenever I needed help. I know I asked a lot of doubts and they helped me every time. I also know I must have been a little difficult to work with, so thank you for having the patience. I owe my wholehearted thanks and appreciation to the entire team of ruby and rubygem.org for selecting me for this project and for their assistance during the entire project work.
 
+<h3>Screenshots of Project</h3>
+
+<img src="{{site.baseurl}}/gsoc_ss1.png" width="900">
+
+<img src="{{site.baseurl}}/gsoc_ss2.png" width="900">
+
+<img src="{{site.baseurl}}/gsoc_ss3.png" width="900">
+
 [ruby_org_gsoc]: https://summerofcode.withgoogle.com/organizations/5542255322988544/
 [rubygems_github]: https://github.com/rubygems/rubygems.org
 [gsoc_project]: https://summerofcode.withgoogle.com/projects/#4782705487642624
